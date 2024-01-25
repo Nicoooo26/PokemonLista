@@ -1,0 +1,99 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+.pokemon-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    max-width: 200px;
+    text-align: center;
+}
+
+.pokemon img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#info.hidden {
+    display: none;
+}
+
+#info {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 90%; 
+    width: auto;
+    text-align: center;
+    overflow: auto;
+    border-radius: 10px; 
+}
+
+#info img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+#info button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#info button:hover {
+    background-color: #ff3e1f;
+}
+
+#pokemon-details {
+    font-size: 16px; 
+    margin: 20px 0; 
+}
+
+#habilidades {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+}
+
+#habilidades li {
+    margin: 5px 0;
+}
+#cargando {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    z-index: 9999; 
+    
+}
