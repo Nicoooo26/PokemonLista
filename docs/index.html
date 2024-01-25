@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>POKEMON</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cuerpo">
+        <div class="pokemon-row" id="pokemon-list">
+        </div>
+    </div>
+    <div id="info" class="hidden">
+        <button id="salir">SALIR</button>
+        <div id="pokemon-info" class="pokemon">
+            <div id="pokemon-image">
+                <img src="" alt="Imagen del Pokémon" />
+            </div>
+            <div id="pokemon-details">
+                <p>Nombre: <span id="nombre"></span></p>
+                <p>ID: <span id="id"></span></p>
+                <p>Habilidades:</p>
+                <ul id="habilidades"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="cargando" id="cargando">Cargando...</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
